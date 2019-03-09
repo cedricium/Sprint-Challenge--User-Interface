@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -98,7 +98,7 @@ header a {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -170,4 +170,48 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* About Page */
+.about-page .top-section {
+    margin: 0 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed black;
+}
+
+.about-page .middle-section {
+    margin: 1rem 1rem;
+    padding: 1rem 0;
+}
+
+.about-page .middle-section .row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.about-page .middle-section .row .feature:nth-of-type(n+1) { margin-right: 2rem; }
+.about-page .middle-section .row .feature {
+    min-height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed black;
+}
+
+.about-page .middle-section .row .feature .title { margin: 1rem 0; }
+
+.about-page .middle-section .row .feature button {
+    font-size: 16px;
+    margin-top: 1rem;
+    border: solid 2px black;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    background: white;
+}
+
+.about-page .bottom-section {
+    margin: 0 1rem 3rem;
 }
