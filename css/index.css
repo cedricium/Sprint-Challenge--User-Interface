@@ -173,6 +173,7 @@ footer nav a {
 }
 
 /* About Page */
+.contact-page .top-section,
 .about-page .top-section {
     margin: 0 1rem;
     padding-bottom: 1rem;
@@ -203,6 +204,7 @@ footer nav a {
 
 .about-page .middle-section .row .feature .title { margin: 1rem 0; }
 
+button[type='submit'],
 .about-page .middle-section .row .feature button {
     font-size: 16px;
     margin-top: 1rem;
@@ -212,6 +214,28 @@ footer nav a {
     background: white;
 }
 
+button[type='submit']:hover,
+.about-page .middle-section .row .feature button:hover { cursor: pointer; }
+
+.contact-page .bottom-section,
 .about-page .bottom-section {
     margin: 0 1rem 3rem;
 }
+
+/* Contact Page */
+.contact-page .middle-section form {
+    margin: 2rem 8rem 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.contact-page .middle-section form .field {
+    margin-bottom: 1rem;
+    text-align: right;
+    width: 100%;
+}
+
+.contact-page .middle-section form .field input,
+.contact-page .middle-section form .field select { width: 50%; }
